@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, redirect, jsonify
-import pymysql
+# import pymysql
 import os
 
 app = Flask(__name__)
