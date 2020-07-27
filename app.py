@@ -23,5 +23,10 @@ def kor_deathCnt_map():
 def kor_isolClearCnt_map():
     return render_template('kor_isolClearCnt_map.html')
 
+# 시도별 발생동향 시각화 지도 및 그래프
+@app.route('/cities_trend_chart')
+def cities_trend_chart():
+    return render_template('cities_trend_chart.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
