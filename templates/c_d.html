@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en" style="height: 100%"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>코로나19 월별 확진자 & 사망자</title>
+    <!-- 차트 링크 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    
+</head>
+
+<body>
+    <canvas id="myChart"></canvas>
+    <script> 
+        var x = []
+        var y1 = [] 
+        var y2 = []
+        fetch("../static/js/json1.json")
+        .then(response => response.json())
+        .then(json => {
+            // console.log(json.data)
+            data =json.data
+            for(i = 0 ; i < data.length ; i++){
+                // console.log(data[i].month)
+                x.push(data[i].month)
+                y1.push(data[i].decideCnt)
+                y2.push(data[i].deathCnt)
+            }
+        })
+        .then(()=> {
+            var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                datasets: [{
+                    label: '확진자',
+                    data: y1,
+                    // data: [123, 87, 59, 140],
+                    backgroundColor: 'rgba(256, 0, 0, 0.1)',    
+                    yAxisID: 'y-axis-1'
+                }, {
+                    label: '사망자',
+                    data: y2,
+                    // data: [2, 3, 8, 6],
+                    backgroundColor: 'transparent',
+                    borderColor: 'skyblue',
+                    type: 'line',
+                    
+                    yAxisID: 'y-axis-2'
+
+                    // Changes this dataset to become a line
+                    
+                }],
+                labels: x
+                // labels: ['January', 'February', 'March', 'April']
+            },
+
+            // Configuration options go here
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: true,
+                    text: '코로나19 월별 확진자 & 사망자'
+                },
+                scales: {
+                    yAxes: [{
+                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                        display: true,
+                        position: 'left',
+                        id: 'y-axis-1',
+                    }, {
+                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                        display: true,
+                        position: 'right',
+                        id: 'y-axis-2',
+
+                        // grid line settings
+                        gridLines: {
+                            drawOnChartArea: false, // only want the grid lines for one axis to show up
+                        },
+                    }],
+                }
+            }
+        });
+        }
+        );
+        
+        
+
+    </script>
+</body>
+
+</html>
