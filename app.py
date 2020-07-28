@@ -2,6 +2,10 @@ from flask import Flask, request, render_template, redirect, jsonify
 # import pymysql
 import os
 
+import urllib.request
+import pandas as pd
+from bs4 import BeautifulSoup
+
 app = Flask(__name__)
  
 @app.route('/')
