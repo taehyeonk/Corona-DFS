@@ -32,5 +32,9 @@ def kor_isolClearCnt_map():
 def cities_trend_chart():
     return render_template('cities_trend_chart.html')
 
+@app.route('/hospital_map')
+def hospital_map():
+    return render_template('hospital_map.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=8089)
