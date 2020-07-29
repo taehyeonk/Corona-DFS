@@ -1,0 +1,58 @@
+{
+    "schema": {
+        "fields": [
+            {
+                "name": "index",
+                "type": "integer"
+            },
+            {
+                "name": "month",
+                "type": "string"
+            },
+            {
+                "name": "decideCnt",
+                "type": "number"
+            },
+            {
+                "name": "deathCnt",
+                "type": "number"
+            }
+        ],
+        "primaryKey": [
+            "index"
+        ],
+        "pandas_version": "0.20.0"
+    },
+    "data": [
+        {
+            "index": 0,
+            "month": "03월",
+            "decideCnt": 5574.0,
+            "deathCnt": 140.0
+        },
+        {
+            "index": 1,
+            "month": "04월",
+            "decideCnt": 979.0,
+            "deathCnt": 85.0
+        },
+        {
+            "index": 2,
+            "month": "05월",
+            "decideCnt": 703.0,
+            "deathCnt": 23.0
+        },
+        {
+            "index": 3,
+            "month": "06월",
+            "decideCnt": 1332.0,
+            "deathCnt": 12.0
+        },
+        {
+            "index": 4,
+            "month": "07월",
+            "decideCnt": 1079.0,
+            "deathCnt": 15.0
+        }
+    ]
+}

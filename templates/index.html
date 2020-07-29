@@ -5,42 +5,42 @@
 <!-- Masthead-->
 <header class="masthead">
     <div class="container">
-        <div class="masthead-subheading">Welcome To Our Studio!</div>
-        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="masthead-subheading">힘내라 대한민국</div>
+        <div class="masthead-heading text-uppercase">코로나19 모두 함께 이겨냅시다!</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">start</a>
     </div>
 </header>
 <!-- Services-->
 <section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">개발 기술</h2>
+            <h3 class="section-subheading text-muted">페이지 제작에 사용된 개발 기술에 대한 설명</h3>
         </div>
         <div class="row text-center">
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-file-invoice fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="my-3">E-Commerce</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <h4 class="my-3">데이터 분석</h4>
+                <p class="text-muted">rest api를 통해 받아온 데이터를 json 타입으로 불러와 pandas, numpy 라이브러리를 사용해 분석</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="my-3">Responsive Design</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <h4 class="my-3">데이터 시각화</h4>
+                <p class="text-muted">matplotlib 라이브러리 및 chart.js를 활용하여 분석한 데이터를 차트화하고 folium을 통해 지도상에 표현</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    <i class="fas fa-spider fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="my-3">Web Security</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <h4 class="my-3">웹 크롤링</h4>
+                <p class="text-muted">beautiful soup를 활용하여 웹 페이지의 html 태그를 불러와 필요한 데이터를 크롤링</p>
             </div>
         </div>
     </div>
@@ -69,20 +69,6 @@
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#kor_deathCnt_map">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/kor_deathCnt_thumbnail.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">국내 사망자 현황</div>
-                        <div class="portfolio-caption-subheading text-muted">국내 지역별 사망자 수</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="#kor_isolClearCnt_map">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -92,6 +78,20 @@
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">국내 완치자 현황</div>
                         <div class="portfolio-caption-subheading text-muted">국내 지역별 완치자 수</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#kor_deathCnt_map">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="../static/img/portfolio/kor_deathCnt_thumbnail.png" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">국내 사망자 현황</div>
+                        <div class="portfolio-caption-subheading text-muted">국내 지역별 사망자 수</div>
                     </div>
                 </div>
             </div>
@@ -108,160 +108,136 @@
         </div>
         <iframe src="cities_trend_chart" width="100%" height="1230" scrolling="no" frameborder="0"></iframe>
     </div>
-    
+
 </section>
 
-<!-- 지역별 현황 -->
-<section class="page-section bg-light" id="portfolio">
-    <div class="container" id="region">
+<!-- 분석 차트 -->
+<section class="page-section bg-light" id="chart">
+    <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">지역별 현황</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">분석 차트</h2>
+            <h3 class="section-subheading text-muted">코로나19 현황 분석 차트</h3>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static//img/portfolio/01-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Threads</div>
-                        <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+                {% include "c_d.html" %}
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/02-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Explore</div>
-                        <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+                {% include "c_e.html" %}
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/03-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Finish</div>
-                        <div class="portfolio-caption-subheading text-muted">Identity</div>
-                    </div>
-                </div>
+        </div>
+        <br /><br /><br />  
+        <div class="row">
+            <div class="col-lg-6">
+                {% include "age_chart.html" %}
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/04-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Lines</div>
-                        <div class="portfolio-caption-subheading text-muted">Branding</div>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+                {% include "gender_chart.html" %}
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/05-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Southwest</div>
-                        <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                    </div>
-                </div>
+        </div>
+        <br /><br /><br />
+        
+            <div class="col-lg-12">
+                <img src="../static/img/chart/confirm.png" width="100%">
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="../static/img/portfolio/06-thumbnail.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Window</div>
-                        <div class="portfolio-caption-subheading text-muted">Photography</div>
-                    </div>
-                </div>
-            </div>
+</section>
+
+<!-- 선별진료소 지도 -->
+<section class="page-section" id="hospital_map">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">선별진료소 현황 Map</h2>
+            <h3 class="section-subheading text-muted">현재 선별진료소 현황을 나타내는 지도</h3>
+        </div>
+        <div>
+            <iframe src="hospital_map" width="100%" height="700px" frameborder="0"></iframe>
         </div>
     </div>
 </section>
-<!-- About-->
+
+<!-- 뉴스 크롤링 -->
+<section class="page-section bg-light" id="news">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">코로나19 관련 뉴스</h2>
+            <h3 class="section-subheading text-muted">현재 실시간 네이버 뉴스 관련도순으로 제공되는 뉴스</h3>
+        </div>
+        <div>
+            <iframe src="news" width="100%" height="550px" frameborder="0"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- History -->
 <section class="page-section" id="about">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">History</h2>
+            <h3 class="section-subheading text-muted">프로젝트 진행 과정</h3>
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/1.jpg" alt="" /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/1.jpg"
+                        alt="" /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4>2009-2011</h4>
-                        <h4 class="subheading">Our Humble Beginnings</h4>
+                        <h4>2020.07.23</h4>
+                        <h4 class="subheading">주제 선정 및 데이터 수집</h4>
                     </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    <div class="timeline-body">
+                        <p class="text-muted">코로나19 데이터를 활용한 현황 분석. 공공데이터를 활용하여 코로나19현황 분석 및 시각화하는 웹 사이트 개발</p>
+                    </div>
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/2.jpg" alt="" /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/2.jpg"
+                        alt="" /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4>March 2011</h4>
-                        <h4 class="subheading">An Agency is Born</h4>
+                        <h4>2020.07.24</h4>
+                        <h4 class="subheading">데이터 전처리 및 정제</h4>
                     </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    <div class="timeline-body">
+                        <p class="text-muted">공공데이터포털을 통한 RestAPI사용 & 코로나관련 사이트에서 크롤링 시도. 가져온 데이터 이상치 제거</p>
+                    </div>
                 </div>
             </li>
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/3.jpg" alt="" /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/3.jpg"
+                        alt="" /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4>December 2012</h4>
-                        <h4 class="subheading">Transition to Full Service</h4>
+                        <h4>2020.07.27</h4>
+                        <h4 class="subheading">웹 페이지 제작 및 시각화</h4>
                     </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    <div class="timeline-body">
+                        <p class="text-muted">Flask를 이용한 웹 페이지 제작 및 RestAPI를 통해 가져온 데이터를 Folium을 사용하여 지도로 표현.
+                             Chart.js를 이용한 그래프 출력 및 시각화</p>
+                    </div>
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/4.jpg" alt="" /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="../static/img/about/4.jpg"
+                        alt="" /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4>July 2014</h4>
-                        <h4 class="subheading">Phase Two Expansion</h4>
+                        <h4>2020.07.28</h4>
+                        <h4 class="subheading">데이터 분석 및 관련 뉴스 크롤링</h4>
                     </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    <div class="timeline-body">
+                        <p class="text-muted">R을 활용한 추가 데이터 분석 및 시각화 작업.
+                            Beautiful Soup을 이용하여 코로나19관련 뉴스 데이터 실시간 크롤링</p>
+                    </div>
                 </div>
             </li>
             <li class="timeline-inverted">
                 <div class="timeline-image">
                     <h4>
-                        Be Part
+                        Finish
                         <br />
-                        Of Our
+                        Our Project
                         <br />
-                        Story!
+                        At 2020.07.29
                     </h4>
                 </div>
             </li>
@@ -273,42 +249,54 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Project 팀원 정보</h3>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="../static/img/team/1.jpg" alt="" />
-                    <h4>Kay Garland</h4>
-                    <p class="text-muted">Lead Designer</p>
+                    <h4>이 고 은</h4>
+                    <p class="text-muted">Project Manager</p>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="../static/img/team/2.jpg" alt="" />
-                    <h4>Larry Parker</h4>
-                    <p class="text-muted">Lead Marketer</p>
+                    <h4>김 승 재</h4>
+                    <p class="text-muted">Lead Data Analyst</p>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="../static/img/team/3.jpg" alt="" />
-                    <h4>Diana Petersen</h4>
+                    <h4>김 태 현</h4>
                     <p class="text-muted">Lead Developer</p>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="../static/img/team/4.jpg" alt="" />
+                    <h4>김 진 범</h4>
+                    <p class="text-muted">Lead Data Analyst</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted">Github과 Notion을 통한 협업 활동 개시</p>
+            </div>
         </div>
     </div>
 </section>
@@ -317,16 +305,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6 my-3">
-                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/envato.jpg" alt="" /></a>
+                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/coronaboard.png" alt="" /></a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
-                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/designmodo.jpg" alt="" /></a>
+                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/kcdc.png"
+                        alt="" /></a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
-                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/themeforest.jpg" alt="" /></a>
+                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/data_go_kr.png"
+                        alt="" /></a>
             </div>
             <div class="col-md-3 col-sm-6 my-3">
-                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/creative-market.jpg" alt="" /></a>
+                <a href="#!"><img class="img-fluid d-block mx-auto" src="../static/img/logos/bigdata_platfom.png"
+                        alt="" /></a>
             </div>
         </div>
     </div>
@@ -355,7 +346,8 @@
 <div class="portfolio-modal modal fade" id="kor_defCnt_map" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
@@ -364,42 +356,32 @@
                             <h2 class="text-uppercase">국내 확진자 현황</h2>
                             <p class="item-intro text-muted">국내 지역별 확진자 수</p>
                             <iframe src="kor_defCnt_map" width="100%" height="700px" frameborder="0"></iframe>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <지역별 누적 확진자>
+                            </p>
+                            <p>'데이터'<br />
+                                강원도(65명), 경기도(1223명), 경남(134명), 경북(1389명), 광주(56명), 대구(6907명), 대전(121명), 부산(154명),
+                                서울(1321명), 세종(50명), 울산(55명), 인천(343명), 전남(25명), 전북(27명), 제주(19명), 충남(168명), 충북(64명)</p>
+                            <p>'범례 조정'<br />
+                                대구 지역의 값이 다른 지역의 값보다 월등히 높아 다른 지역간의 차이를 확인할 수 없습니다.<br />
+                                따라서, 특정 구간마다 색을 지정해줘서 차이가 드러나게 했습니다.<br />
+                                남 색 : 1600 이상<br />
+                                파란색 : 1300 이상 ~ 1600 미만<br />
+                                하늘색 : 1000 이상 ~ 1300 미만<br />
+                                초록색 : 100 이상 ~ 1000 미만<br />
+                                연두색 : 50 이상 ~ 100 미만<br />
+                                노란색 : 0 이상 ~ 50 미만<br />
+                            </p>
+                            <p>
+                                '해석'<br />
+                                위 그림은 2020년 07월 01일까지의 지역별 누적 확진자의 수치를 시각화한 지도입니다.<br />
+                                6907명으로 가장 많은 확진자가 측정된 '대구' 지역이 남색으로 표시된 것을 확인할 수 있고,<br />
+                                1000명이 넘어가는 '경기도'와 '서울', '경북' 지역이 파란색으로 표시된 것을 볼 수 있습니다.
+                            </p>
                             <ul class="list-inline">
-                                <li>Date: January 2020</li>
-                                <li>Client: Threads</li>
-                                <li>Category: Illustration</li>
-                            </ul>
-                            <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                <i class="fas fa-times mr-1"></i>
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- kor_deathCnt_map -->
-<div class="portfolio-modal modal fade" id="kor_deathCnt_map" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here-->
-                            <h2 class="text-uppercase">국내 사망자 현황</h2>
-                            <p class="item-intro text-muted">국내 지역별 사망자 수</p>
-                            <iframe src="kor_deathCnt_map" width="100%" height="700px" frameborder="0"></iframe>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <ul class="list-inline">
-                                <li>Date: January 2020</li>
-                                <li>Client: Threads</li>
-                                <li>Category: Illustration</li>
+                                <li>Date: ~ 2020.07.01</li>
+                                <li>Data: 확진자 데이터</li>
+                                <li>Source: 공공데이터포털</li>
                             </ul>
                             <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fas fa-times mr-1"></i>
@@ -417,7 +399,8 @@
 <div class="portfolio-modal modal fade" id="kor_isolClearCnt_map" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
@@ -426,11 +409,69 @@
                             <h2 class="text-uppercase">국내 완치자 현황</h2>
                             <p class="item-intro text-muted">국내 지역별 완치자 수</p>
                             <iframe src="kor_isolClearCnt_map" width="100%" height="700px" frameborder="0"></iframe>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <지역별 누적 완치자>
+                            </p>
+                            <p>'데이터'<br />
+                                강원도(55명), 경기도(951명), 경남(128명), 경북(1328명), 광주(32명), 대구(6700명), 대전(44명), 부산(142명),
+                                서울(1026명), 세종(47명), 울산(52명), 인천(294명), 전남(19명), 전북(21명), 제주(16명), 충남(150명), 충북(60명)</p>
+                            <p>'범례 조정'<br />
+                                값을 분위수(25%, 50%, 75%, 100%)에 따라 각 지역에 색상으로 표시했습니다.<br />
+                                값의 차이가 크게 나더라도 분위에 따라 같은 색으로 표시되는 경향이 있습니다.<br />
+                            </p>
+                            <p>
+                                '해석'<br />
+                                위 그림은 2020년 07월 01일까지의 지역별 누적 격리해제수를 시각화한 지도입니다.
+                            </p>
                             <ul class="list-inline">
-                                <li>Date: January 2020</li>
-                                <li>Client: Threads</li>
-                                <li>Category: Illustration</li>
+                                <li>Date: ~ 2020.07.01</li>
+                                <li>Data: 완치자 데이터</li>
+                                <li>Source: 공공데이터포털</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- kor_deathCnt_map -->
+<div class="portfolio-modal modal fade" id="kor_deathCnt_map" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">국내 사망자 현황</h2>
+                            <p class="item-intro text-muted">국내 지역별 사망자 수</p>
+                            <iframe src="kor_deathCnt_map" width="100%" height="700px" frameborder="0"></iframe>
+                            <p>
+                                <지역별 누적 사망자>
+                            </p>
+                            <p>'데이터'<br />
+                                강원도(3명), 경기도(23명), 경남(0명), 경북(54명), 광주(0명), 대구(189명), 대전(1명), 부산(3명), 서울(7명), 세종(0명),
+                                울산(1명), 인천(1명), 전남(0명), 전북(0명), 제주(0명), 충남(0명), 충북(0명)</p>
+                            <p>'범례 조정'<br />
+                                folium 라이브러리 자체에서 값을 구분하여 시각화해준 결과입니다.<br />
+                                다른 지역들의 값보다 대구, 경북 지역의 값이 월등히 높아 다른 지역들간에 구별이 불가능한 것을 확인할 수 있습니다.<br />
+                            </p>
+                            <p>
+                                '해석'<br />
+                                위 그림은 2020년 07월 01일까지의 지역별 누적 사망자의 수치를 시각화한 지도입니다.
+                            </p>
+                            <ul class="list-inline">
+                                <li>Date: ~ 2020.07.01</li>
+                                <li>Data: 사망자 데이터</li>
+                                <li>Source: 공공데이터포털</li>
                             </ul>
                             <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fas fa-times mr-1"></i>
@@ -448,7 +489,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -457,7 +499,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/01-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Threads</li>
@@ -478,7 +523,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -487,7 +533,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/02-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Explore</li>
@@ -508,7 +557,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -517,7 +567,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/03-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Finish</li>
@@ -538,7 +591,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -547,7 +601,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/04-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Lines</li>
@@ -568,7 +625,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -577,7 +635,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/05-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Southwest</li>
@@ -598,7 +659,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="close-modal" data-dismiss="modal"><img src="../static/img/close-icon.svg" alt="Close modal" />
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -607,7 +669,10 @@
                             <h2 class="text-uppercase">Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-fluid d-block mx-auto" src="../static/img/portfolio/06-full.jpg" alt="" />
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
                             <ul class="list-inline">
                                 <li>Date: January 2020</li>
                                 <li>Client: Window</li>

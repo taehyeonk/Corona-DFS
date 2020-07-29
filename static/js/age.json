@@ -1,0 +1,95 @@
+{
+    "schema": {
+        "fields": [
+            {
+                "name": "index",
+                "type": "integer"
+            },
+            {
+                "name": "age",
+                "type": "string"
+            },
+            {
+                "name": "confirm",
+                "type": "integer"
+            },
+            {
+                "name": "death",
+                "type": "integer"
+            },
+            {
+                "name": "percent",
+                "type": "string"
+            }
+        ],
+        "primaryKey": [
+            "index"
+        ],
+        "pandas_version": "0.20.0"
+    },
+    "data": [
+        {
+            "index": 8,
+            "age": "0대",
+            "confirm": 245,
+            "death": 0,
+            "percent": 0
+        },
+        {
+            "index": 7,
+            "age": "10대",
+            "confirm": 781,
+            "death": 0,
+            "percent": 0
+        },
+        {
+            "index": 6,
+            "age": "20대",
+            "confirm": 3607,
+            "death": 0,
+            "percent": 0
+        },
+        {
+            "index": 5,
+            "age": "30대",
+            "confirm": 1774,
+            "death": 2,
+            "percent": "0.11"
+        },
+        {
+            "index": 4,
+            "age": "40대",
+            "confirm": 1907,
+            "death": 3,
+            "percent": "0.16"
+        },
+        {
+            "index": 3,
+            "age": "50대",
+            "confirm": 2511,
+            "death": 16,
+            "percent": "0.64"
+        },
+        {
+            "index": 2,
+            "age": "60대",
+            "confirm": 1840,
+            "death": 41,
+            "percent": "2.23"
+        },
+        {
+            "index": 1,
+            "age": "70대",
+            "confirm": 941,
+            "death": 90,
+            "percent": "9.56"
+        },
+        {
+            "index": 0,
+            "age": "80대",
+            "confirm": 597,
+            "death": 148,
+            "percent": "24.79"
+        }
+    ]
+}

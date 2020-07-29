@@ -1,0 +1,46 @@
+{
+    "schema": {
+        "fields": [
+            {
+                "name": "index",
+                "type": "integer"
+            },
+            {
+                "name": "gender",
+                "type": "string"
+            },
+            {
+                "name": "confirm",
+                "type": "integer"
+            },
+            {
+                "name": "death",
+                "type": "integer"
+            },
+            {
+                "name": "percent",
+                "type": "number"
+            }
+        ],
+        "primaryKey": [
+            "index"
+        ],
+        "pandas_version": "0.20.0"
+    },
+    "data": [
+        {
+            "index": 0,
+            "gender": "male",
+            "confirm": 6394,
+            "death": 159,
+            "percent": 2.49
+        },
+        {
+            "index": 1,
+            "gender": "female",
+            "confirm": 7809,
+            "death": 141,
+            "percent": 1.81
+        }
+    ]
+}
